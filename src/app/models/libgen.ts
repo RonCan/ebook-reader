@@ -1,0 +1,66 @@
+export interface ILibGenBook {
+    aich: string;
+    asin: string;
+    author: string;
+    bookmarked: string;
+    btih: string;
+    city: string;
+    cleaned: string;
+    color: string;
+    commentary: string;
+    coverurl: string;
+    crc32: string;
+    ddc: string;
+    descr: string;
+    doi: string;
+    dpi: string;
+    edition: string;
+    edonkey: string;
+    extension: 'pdf' | string;
+    filesize: string;
+    googlebookid: string;
+    id: string;
+    identifier: string;
+    identifierwodash: string;
+    issn: string;
+    issue: string;
+    language: string;
+    lbc: string;
+    lcc: string;
+    library: string;
+    local: string;
+    locator: string;
+    md5: string;
+    openlibraryid: string;
+    orientation: string;
+    pages: string;
+    pagesinfile: string;
+    paginated: string;
+    periodical: string;
+    publisher: string;
+    scanned: string;
+    searchable: string;
+    series: string;
+    sha1: string;
+    sha256: string;
+    tags: string;
+    timeadded: string;
+    timelastmodified: string;
+    title: string;
+    toc: string;
+    topic: string;
+    torrent: string;
+    tth: string;
+    udc: string;
+    visible: string;
+    volumeinfo: string;
+    year: string;
+}
+
+export interface ISearchOptions {
+    mirror: any;
+    query?: string;
+    count: any;
+    sort_by?: string;
+    reverse?: boolean;
+}
