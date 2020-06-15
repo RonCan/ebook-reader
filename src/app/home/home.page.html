@@ -19,7 +19,8 @@
         [(ngModel)]="query"
         (ngModelChange)="search()"
     ></ion-searchbar>
-    <ion-card *ngFor="let book of searchResults">
+    <!--    [href]="'http://libgen.is/get.php?md5=' + book.md5" target="_blank"-->
+    <ion-card *ngFor="let book of searchResults" routerLink="/book">
         <div style="width: 100%; text-align: center;">
             <img
                 [src]="'http://covers.openlibrary.org/b/isbn/' + book.identifier.split(',')[0]+ '-L.jpg'"

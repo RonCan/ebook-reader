@@ -21,7 +21,9 @@ export class HomePage {
     constructor(
         private libgenService: LibgenService,
         private http: HttpClient
-    ) {}
+    ) {
+        libgenService.getFastestMirror().then(console.log).catch(console.error);
+    }
 
     async search() {
         this.options.query = this.query;
