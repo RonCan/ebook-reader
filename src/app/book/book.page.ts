@@ -19,6 +19,16 @@ export class BookPage implements OnInit {
         });
         this.rendition.spread('always', 600);
         const displayed = this.rendition.display();
+        this.rendition.on('keyup', (event) => {
+            const kc = event.keyCode || event.which;
+            console.log(kc);
+            if (kc === 37) {
+                this.rendition.prev();
+            }
+            if (kc === 39) {
+                this.rendition.next();
+            }
+        });
     }
 
     next() {
