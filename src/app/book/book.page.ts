@@ -34,4 +34,7 @@ export class BookPage implements OnInit {
     next() {
         this.rendition.next();
     }
+    previous() {
+        this.rendition.prev();
+    }
 }
